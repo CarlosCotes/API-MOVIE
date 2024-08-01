@@ -1,0 +1,132 @@
+#titulo{
+    text-align: center;
+    font-size: 25px;
+}
+body{
+background-color: black;
+    color: white;
+}
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto 100px auto;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 40px;
+}
+
+.contenedor .pelicula{
+    text-align: center;
+}
+
+.contenedor .pelicula .titulo{
+    font-size: 20px;
+    height: 15%;
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor .pelicula .poster{
+    height: 40%;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+.contenedor .pelicula .descrip{
+    height: 45%;
+    font-size: 10px;
+    color: black;
+    background-color: white;
+    padding: 2%;
+    border-radius: 10px;
+    display: flex;
+
+}
+.paginacion{
+    height: 5vw;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+#btnAnterior{
+    width: 25%;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+#btnSiguiente{
+    width: 25%;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+@media only screen and (min-width:500px){
+    .contenedor{
+        width: 90%;
+        max-width: 1000px;
+        margin: 40px auto 100px auto;
+        display: grid;
+        grid-template-columns: repeat(4 , 1fr);
+        gap: 40px;
+    }
+    
+    .contenedor .pelicula{
+        text-align: center;
+    }
+    
+    .contenedor .pelicula .titulo{
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedor .pelicula .poster{
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 15px;
+    }
+    .contenedor .pelicula .descrip{
+        height: 45%;
+        font-size: 14px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .paginacion{
+        height: 5vw;
+        display: flex;
+        text-align: center;
+        justify-content: space-evenly;
+        align-items: center;
+    
+    }
+    #btnAnterior{
+        width: 25%;
+        padding: 10px;
+        margin: 5px;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+    }
+    
+    #btnSiguiente{
+        width: 25%;
+        padding: 10px;
+        margin: 5px;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+    }
+    
+}
